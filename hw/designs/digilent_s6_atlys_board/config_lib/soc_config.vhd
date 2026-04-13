@@ -83,6 +83,13 @@ package soc_config is
 --  constant USER_USE_CALIB_SOFT  : string := "FALSE";                                   --! DRAM controller calibration logic setting ("TRUE","FALSE")
   
   --
+  -- SRAM GENERAL SETTING
+  --
+
+  constant USER_USE_SRAM        : boolean := false;                                     --! if true, it will implement the 32-bit SRAM controller
+  constant USER_SRAM_BYTE_S     : natural := 1048576;                                   --! SRAM byte size (default is 1 MB) 
+
+  --
   -- INTERRUPT CONTROLLER GENERAL SETTING
   --
 
